@@ -1,4 +1,4 @@
-import { MessageSquare, LayoutGrid, Calendar, GraduationCap, Users, MapPin, BarChart3, HelpCircle, GraduationCapIcon } from "lucide-react";
+import { MessageSquare, LayoutGrid, Calendar, GraduationCap, Users, MapPin, BarChart3, HelpCircle, GraduationCapIcon, FileText } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import {
   Sidebar,
@@ -18,6 +18,7 @@ const menuItems = [
   { title: "Student ERP", url: "/student-erp", icon: LayoutGrid },
   { title: "ERP Portal", url: "/erp-portal", icon: GraduationCapIcon },
   { title: "Timetable", url: "/timetable", icon: Calendar },
+  { title: "Examinations", url: "/examinations", icon: FileText },
   { title: "Programs", url: "/programs", icon: GraduationCap },
   { title: "Faculty Directory", url: "/faculty", icon: Users },
   { title: "Campus Locations", url: "/campus", icon: MapPin },

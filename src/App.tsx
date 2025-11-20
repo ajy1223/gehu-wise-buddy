@@ -8,6 +8,7 @@ import ChatAssistant from "./pages/ChatAssistant";
 import StudentERP from "./pages/StudentERP";
 import ERPPortal from "./pages/ERPPortal";
 import Timetable from "./pages/Timetable";
+import Examinations from "./pages/Examinations";
 import Programs from "./pages/Programs";
 import FacultyDirectory from "./pages/FacultyDirectory";
 import CampusLocations from "./pages/CampusLocations";
@@ -28,8 +29,9 @@ const App = () => (
             <Route path="/" element={<ChatAssistant />} />
             <Route path="/student-erp" element={<StudentERP />} />
             <Route path="/erp-portal" element={<ERPPortal />} />
-            <Route path="/timetable" element={<Timetable />} />
-            <Route path="/programs" element={<Programs />} />
+          <Route path="/timetable" element={<Timetable />} />
+          <Route path="/examinations" element={<Examinations />} />
+          <Route path="/programs" element={<Programs />} />
             <Route path="/faculty" element={<FacultyDirectory />} />
             <Route path="/campus" element={<CampusLocations />} />
             <Route path="/analytics" element={<Analytics />} />
