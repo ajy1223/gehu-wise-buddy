@@ -16,7 +16,6 @@ import {
 const menuItems = [
   { title: "Chat Assistant", url: "/", icon: MessageSquare },
   { title: "Student ERP", url: "/student-erp", icon: LayoutGrid },
-  { title: "ERP Portal", url: "/erp-portal", icon: GraduationCapIcon },
   { title: "Timetable", url: "/timetable", icon: Calendar },
   { title: "Examinations", url: "/examinations", icon: FileText },
   { title: "Programs", url: "/programs", icon: GraduationCap },
