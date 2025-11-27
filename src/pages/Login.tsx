@@ -65,9 +65,15 @@ export default function Login() {
           redirectTo: `${window.location.origin}/`,
         },
       });
-      if (error) throw error;
+      if (error) {
+        if (error.message.includes("not enabled") || error.message.includes("Unsupported provider")) {
+          toast.error("Google login is not enabled yet. Please use email or phone login.");
+        } else {
+          toast.error(error.message);
+        }
+        throw error;
+      }
     } catch (error: any) {
-      toast.error(error.message);
       setLoading(false);
     }
   };
